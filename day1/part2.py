@@ -20,7 +20,7 @@ with open('input.txt') as file:
         count += amount // 100
 
         #partial rotations that go through 0
-        for _ in range(amount % 100):
+        for j in range(amount % 100):
             dial = (dial + step) % 100
             if dial == 0:
                 count += 1
