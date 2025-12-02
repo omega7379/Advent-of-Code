@@ -11,8 +11,11 @@ with open('input.txt') as file:
     for i in file:
         direction = i[0]
         amount = int(i[1:])
-        step = 1 if direction == 'R' else -1
-
+        
+        if direction == 'R':
+            step = 1
+        else:
+            step = -1
         #how many full rotations
         count += amount // 100
 
